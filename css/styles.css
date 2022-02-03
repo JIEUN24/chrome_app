@@ -1,7 +1,25 @@
 body {
-    background-color: bisque;
+    
 }
 
 .hidden {
     display: none;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 50px;
+}
+h1 {
+    font-size: 40px;
+}
+
+#quote > span{
+    font-size: 13px;
 }
