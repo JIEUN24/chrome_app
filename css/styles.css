@@ -1,25 +1,133 @@
-body {
-    
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    /* 절대적인 위치를 계산 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 웹브라우저 사이즈를 조절 */
+    max-width: 100%;
+    height: auto;
+
+    /* 쌓여있는 레이어 순서. -1을 입력하면 사진이 뒤로 밀리고 텍스트가 앞으로 온다 */
+    z-index: -1; 
+    animation: fadeIn 0.5s linear;
 }
 
 .hidden {
     display: none;
 }
 
-.wrap {
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+     
+}
+
+.wrapper_title {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid white;
+    border-radius: 30px;
 }
 
 h2 {
-    font-size: 50px;
+    color: white;
+    font-size: 80px;
 }
-h1 {
-    font-size: 40px;
+
+.input1 {
+    background :rgba(255,255,255,0.5);
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white   
+}
+
+input::placeholder {
+    color: white;
+}
+
+.input2 {
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 3px; 
+}
+
+#greeting {
+    color: white;
+    font-size: 30px;
+}
+
+.input3 {
+    width: 380px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white    
+}
+
+
+.wrapper_footer {
+    background :rgba(255,255,255,0.5);
+    height: 60px;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#todo-list > li{
+    background :rgba(255,255,255,0.5);
+    border-radius: 7px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration-line: none;
+    background :rgba(255,255,255,0.5);
+    color: black;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 #quote > span{
     font-size: 13px;
+    font-weight: bold;
+}
+
+#weather {
+    font-size: 20px;
+    font-weight: bold;
 }
