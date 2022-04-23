@@ -5,7 +5,7 @@ const quotes = [
     },
     {
     quote: 'Do not try to be original, just try to be good.',
-    author: 'Paul Rand'
+    author: 'Paul Rand'  
     },
     {
     quote: 'Do not be afraid to give up the good to go for the great',
